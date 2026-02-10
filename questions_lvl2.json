@@ -1,0 +1,172 @@
+[
+{
+  "_id": "l2cs1",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "What happens when a value type is assigned to an object type in C#?",
+  "options": [
+    { "id": "opt1", "text": "It is referenced directly without copying", "isCorrect": false },
+    { "id": "opt2", "text": "It is boxed and stored on the heap", "isCorrect": true },
+    { "id": "opt3", "text": "It throws a runtime exception", "isCorrect": false },
+    { "id": "opt4", "text": "It becomes immutable", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "When a value type is assigned to an object, boxing occurs and the value is copied to the heap.",
+  "difficulty": "Intermediate",
+  "points": 5,
+  "tags": ["C#", "Memory Management"],
+},
+{
+  "_id": "l2cs2",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "Which keyword prevents a class from being inherited in C#?",
+  "options": [
+    { "id": "opt1", "text": "sealed", "isCorrect": true },
+    { "id": "opt2", "text": "static", "isCorrect": false },
+    { "id": "opt3", "text": "readonly", "isCorrect": false },
+    { "id": "opt4", "text": "const", "isCorrect": false }
+  ],
+  "correctAnswer": "opt1",
+  "explanation": "The sealed keyword prevents other classes from inheriting the class.",
+  "difficulty": "Intermediate",
+  "points": 5,
+  "tags": ["C#", "OOP"],
+},
+{
+  "_id": "l2cs3",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "What is the main purpose of the 'using' statement in C# when working with IDisposable objects?",
+  "options": [
+    { "id": "opt1", "text": "To import namespaces", "isCorrect": false },
+    { "id": "opt2", "text": "To automatically dispose unmanaged resources", "isCorrect": true },
+    { "id": "opt3", "text": "To improve performance", "isCorrect": false },
+    { "id": "opt4", "text": "To enable inheritance", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "The using statement ensures Dispose() is called automatically, releasing unmanaged resources.",
+  "difficulty": "Intermediate",
+  "points": 5,
+  "tags": ["C#", "Resource Management"],
+},
+{
+  "_id": "l2cs4",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "Which concept allows multiple methods with the same name but different parameters?",
+  "options": [
+    { "id": "opt1", "text": "Overriding", "isCorrect": false },
+    { "id": "opt2", "text": "Overloading", "isCorrect": true },
+    { "id": "opt3", "text": "Encapsulation", "isCorrect": false },
+    { "id": "opt4", "text": "Abstraction", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "Method overloading allows methods with the same name but different parameter signatures.",
+  "difficulty": "Intermediate",
+  "points": 5,
+  "tags": ["C#", "OOP"],
+},
+{
+  "_id": "l2cs5",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "Which feature ensures derived classes can override a base class method?",
+  "options": [
+    { "id": "opt1", "text": "virtual keyword", "isCorrect": true },
+    { "id": "opt2", "text": "sealed keyword", "isCorrect": false },
+    { "id": "opt3", "text": "static keyword", "isCorrect": false },
+    { "id": "opt4", "text": "readonly keyword", "isCorrect": false }
+  ],
+  "correctAnswer": "opt1",
+  "explanation": "A base method must be marked virtual to allow overriding in derived classes.",
+  "difficulty": "Intermediate",
+  "points": 5,
+  "tags": ["C#", "Polymorphism"],
+},
+{
+  "_id": "l2net1",
+  "category": "development",
+  "skillType": ".NET Runtime",
+  "question": "Which generation in .NET Garbage Collection typically holds long-lived objects?",
+  "options": [
+    { "id": "opt1", "text": "Generation 0", "isCorrect": false },
+    { "id": "opt2", "text": "Generation 1", "isCorrect": false },
+    { "id": "opt3", "text": "Generation 2", "isCorrect": true },
+    { "id": "opt4", "text": "Large Object Heap only", "isCorrect": false }
+  ],
+  "correctAnswer": "opt3",
+  "explanation": "Generation 2 contains long-lived objects that survived multiple garbage collections.",
+  "difficulty": "Intermediate",
+  "points": 5,
+  "tags": [".NET", "Garbage Collection"],
+},
+{
+  "_id": "l2net2",
+  "category": "development",
+  "skillType": ".NET Core Concepts",
+  "question": "Which SOLID principle is violated when a class depends directly on concrete implementations?",
+  "options": [
+    { "id": "opt1", "text": "Single Responsibility Principle", "isCorrect": false },
+    { "id": "opt2", "text": "Open/Closed Principle", "isCorrect": false },
+    { "id": "opt3", "text": "Dependency Inversion Principle", "isCorrect": true },
+    { "id": "opt4", "text": "Liskov Substitution Principle", "isCorrect": false }
+  ],
+  "correctAnswer": "opt3",
+  "explanation": "DIP states that high-level modules should depend on abstractions, not concrete implementations.",
+  "difficulty": "Intermediate",
+  "points": 5,
+  "tags": ["SOLID", ".NET"],
+},
+{
+  "_id": "l2net3",
+  "category": "development",
+  "skillType": "LINQ",
+  "question": "What is the key difference between IEnumerable and IQueryable?",
+  "options": [
+    { "id": "opt1", "text": "IQueryable executes queries in memory only", "isCorrect": false },
+    { "id": "opt2", "text": "IEnumerable executes queries in memory, IQueryable can translate queries to external sources", "isCorrect": true },
+    { "id": "opt3", "text": "IEnumerable supports async operations only", "isCorrect": false },
+    { "id": "opt4", "text": "There is no difference", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "IEnumerable works in memory, while IQueryable allows query translation (e.g., SQL in Entity Framework).",
+  "difficulty": "Intermediate",
+  "points": 5,
+  "tags": ["LINQ", ".NET"],
+},
+{
+  "_id": "l2net4",
+  "category": "development",
+  "skillType": "Asynchronous Programming",
+  "question": "What happens if an async method is called without await?",
+  "options": [
+    { "id": "opt1", "text": "It blocks the thread", "isCorrect": false },
+    { "id": "opt2", "text": "It runs synchronously", "isCorrect": false },
+    { "id": "opt3", "text": "It returns a Task immediately without waiting for completion", "isCorrect": true },
+    { "id": "opt4", "text": "It throws a compile-time error", "isCorrect": false }
+  ],
+  "correctAnswer": "opt3",
+  "explanation": "Calling an async method without await returns the Task immediately and continues execution.",
+  "difficulty": "Intermediate",
+  "points": 5,
+  "tags": ["Async", ".NET"],
+},
+{
+  "_id": "l2net5",
+  "category": "development",
+  "skillType": ".NET Runtime",
+  "question": "What is managed code in .NET?",
+  "options": [
+    { "id": "opt1", "text": "Code executed outside CLR", "isCorrect": false },
+    { "id": "opt2", "text": "Code executed under CLR supervision", "isCorrect": true },
+    { "id": "opt3", "text": "Uncompiled C++ code", "isCorrect": false },
+    { "id": "opt4", "text": "Java bytecode", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "Managed code runs under CLR control and benefits from services like garbage collection and security.",
+  "difficulty": "Intermediate",
+  "points": 5,
+  "tags": [".NET", "CLR"],
+}
+]
