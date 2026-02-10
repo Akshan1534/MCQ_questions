@@ -1,0 +1,175 @@
+C# and .Net
+
+[
+{ QUESTION 1
+  "_id": "cs1",
+  "category": "development",
+  "skillType": "C# Language Fundamentals",
+  "question": "Which keyword is used to declare a method that does not return any value in C#?",
+  "options": [
+    { "id": "opt1", "text": "null", "isCorrect": false },
+    { "id": "opt2", "text": "void", "isCorrect": true },
+    { "id": "opt3", "text": "return", "isCorrect": false },
+    { "id": "opt4", "text": "static", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "The 'void' keyword is used when a method does not return a value.",
+  "difficulty": "Level 1",
+  "points": 5,
+  "tags": ["C#", "Methods"],
+},
+{ QUESTION 2
+  "_id": "cs2",
+  "category": "development",
+  "skillType": "C# Language Fundamentals",
+  "question": "Which of the following is a reference type in C#?",
+  "options": [
+    { "id": "opt1", "text": "int", "isCorrect": false },
+    { "id": "opt2", "text": "double", "isCorrect": false },
+    { "id": "opt3", "text": "string", "isCorrect": true },
+    { "id": "opt4", "text": "bool", "isCorrect": false }
+  ],
+  "correctAnswer": "opt3",
+  "explanation": "String is a reference type in C# and is stored on the heap.",
+  "difficulty": "Level 1",
+  "points": 5,
+  "tags": ["C#", "Data Types"],
+},
+{ QUESTION3
+  "_id": "cs3",
+  "category": "development",
+  "skillType": "C# Language Fundamentals",
+  "question": "Which loop is guaranteed to execute at least once?",
+  "options": [
+    { "id": "opt1", "text": "for loop", "isCorrect": false },
+    { "id": "opt2", "text": "while loop", "isCorrect": false },
+    { "id": "opt3", "text": "do-while loop", "isCorrect": true },
+    { "id": "opt4", "text": "foreach loop", "isCorrect": false }
+  ],
+  "correctAnswer": "opt3",
+  "explanation": "The do-while loop executes the block once before checking the condition.",
+  "difficulty": "Level 1",
+  "points": 5,
+  "tags": ["C#", "Control Flow"],
+},
+{ QUESTION 4
+  "_id": "cs4",
+  "category": "development",
+  "skillType": "C# Language Fundamentals",
+  "question": "What is the purpose of an interface in C#?",
+  "options": [
+    { "id": "opt1", "text": "To provide method implementation", "isCorrect": false },
+    { "id": "opt2", "text": "To define a contract without implementation", "isCorrect": true },
+    { "id": "opt3", "text": "To store data", "isCorrect": false },
+    { "id": "opt4", "text": "To prevent inheritance", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "An interface defines a contract that implementing classes must follow.",
+  "difficulty": "Level 1",
+  "points": 5,
+  "tags": ["C#", "OOP"],
+},
+{ QUESTION 5
+  "_id": "cs5",
+  "category": "development",
+  "skillType": "C# Language Fundamentals",
+  "question": "Which keyword is used to inherit a class in C#?",
+  "options": [
+    { "id": "opt1", "text": "extends", "isCorrect": false },
+    { "id": "opt2", "text": "inherits", "isCorrect": false },
+    { "id": "opt3", "text": "base", "isCorrect": false },
+    { "id": "opt4", "text": ":", "isCorrect": true }
+  ],
+  "correctAnswer": "opt4",
+  "explanation": "In C#, a colon (:) is used to inherit a class or implement an interface.",
+  "difficulty": "Level 1",
+  "points": 5,
+  "tags": ["C#", "Inheritance"],
+},
+
+{ QUESTION 6
+  "_id": "net1",
+  "category": "development",
+  "skillType": ".NET Runtime",
+  "question": "What is the role of the CLR in .NET?",
+  "options": [
+    { "id": "opt1", "text": "Design user interfaces", "isCorrect": false },
+    { "id": "opt2", "text": "Manage memory and execute code", "isCorrect": true },
+    { "id": "opt3", "text": "Write database queries", "isCorrect": false },
+    { "id": "opt4", "text": "Compile Java code", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "The CLR manages execution, memory, security, and garbage collection in .NET.",
+  "difficulty": "Level 1",
+  "points": 5,
+  "tags": [".NET", "CLR"],
+},
+{ QUESTION 7
+  "_id": "net2",
+  "category": "development",
+  "skillType": ".NET Runtime",
+  "question": "What does Garbage Collection do in .NET?",
+  "options": [
+    { "id": "opt1", "text": "Deletes files permanently", "isCorrect": false },
+    { "id": "opt2", "text": "Manages and frees unused memory", "isCorrect": true },
+    { "id": "opt3", "text": "Compiles code", "isCorrect": false },
+    { "id": "opt4", "text": "Encrypts data", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "Garbage Collection automatically frees memory occupied by unused objects.",
+  "difficulty": "Level 1",
+  "points": 5,
+  "tags": [".NET", "Memory Management"],
+},
+{ QUESTION 8
+  "_id": "net3",
+  "category": "development",
+  "skillType": ".NET Core Concepts",
+  "question": "Which feature is commonly used in .NET Core for Dependency Injection?",
+  "options": [
+    { "id": "opt1", "text": "Service Container", "isCorrect": true },
+    { "id": "opt2", "text": "Garbage Collector", "isCorrect": false },
+    { "id": "opt3", "text": "Thread Pool", "isCorrect": false },
+    { "id": "opt4", "text": "Assembly Loader", "isCorrect": false }
+  ],
+  "correctAnswer": "opt1",
+  "explanation": ".NET Core provides a built-in service container for dependency injection.",
+  "difficulty": "Level 1",
+  "points": 5,
+  "tags": [".NET", "Dependency Injection"],
+},
+{ QUESTION 9
+  "_id": "net4",
+  "category": "development",
+  "skillType": "LINQ",
+  "question": "What does LINQ stand for?",
+  "options": [
+    { "id": "opt1", "text": "Language Integrated Query", "isCorrect": true },
+    { "id": "opt2", "text": "Linked Internal Query", "isCorrect": false },
+    { "id": "opt3", "text": "Logical Indexed Query", "isCorrect": false },
+    { "id": "opt4", "text": "Language Internal Queue", "isCorrect": false }
+  ],
+  "correctAnswer": "opt1",
+  "explanation": "LINQ stands for Language Integrated Query and allows querying data in C#.",
+  "difficulty": "Level 1",
+  "points": 5,
+  "tags": [".NET", "LINQ"],
+},
+{ QUESTION 10
+  "_id": "net5",
+  "category": "development",
+  "skillType": "Asynchronous Programming",
+  "question": "Which keyword is used to define an asynchronous method in C#?",
+  "options": [
+    { "id": "opt1", "text": "await", "isCorrect": false },
+    { "id": "opt2", "text": "async", "isCorrect": true },
+    { "id": "opt3", "text": "task", "isCorrect": false },
+    { "id": "opt4", "text": "thread", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "The 'async' keyword is used to define an asynchronous method.",
+  "difficulty": "Level 1",
+  "points": 5,
+  "tags": [".NET", "Async"],
+}
+]
