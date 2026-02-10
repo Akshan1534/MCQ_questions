@@ -1,6 +1,6 @@
 [
 {
-  "id": "79807be9f80fdb1936b2c61",
+  "id": "python_lvl_9_question_1",
   "category": "development",
   "skillType": "Programming Languages",
   "question": "In Python, what is the underlying reason integers appear to behave like value types despite being objects?",
@@ -17,7 +17,7 @@
   "tags": ["Memory Model", "Reference vs Value Types"]
 },
 {
-  "id": "79807be9f80fdb1936b2c62",
+  "id": "python_lvl_9_question_2",
   "category": "development",
   "skillType": "Programming Languages",
   "question": "Why can modifying a mutable argument inside a function affect the caller's object?",
@@ -34,7 +34,7 @@
   "tags": ["Call Semantics", "Mutable vs Immutable"]
 },
 {
-  "id": "79807be9f80fdb1936b2c63",
+  "id": "python_lvl_9_question_3",
   "category": "development",
   "skillType": "Programming Languages",
   "question": "What differentiates a SyntaxError from other runtime exceptions in Python?",
@@ -51,7 +51,7 @@
   "tags": ["Compile-time vs Runtime", "Error Handling"]
 },
 {
-  "id": "79807be9f80fdb1936b2c64",
+  "id": "python_lvl_9_question_4",
   "category": "development",
   "skillType": "Programming Languages",
   "question": "How does Python's lack of block scope impact loop variable behavior?",
@@ -68,7 +68,7 @@
   "tags": ["Variables & Scope", "Block vs Function Scope"]
 },
 {
-  "id": "79807be9f80fdb1936b2c65",
+  "id": "python_lvl_9_question_5",
   "category": "development",
   "skillType": "Programming Languages",
   "question": "What is the consequence of short-circuit evaluation when using logical operators in conditional expressions?",
@@ -85,7 +85,7 @@
   "tags": ["Control Flow", "Short-circuit Evaluation"]
 },
 {
-  "id": "79807be9f80fdb1936b2c66",
+  "id": "python_lvl_9_question_6",
   "category": "development",
   "skillType": "Programming Languages",
   "question": "How does recursion impact Python's call stack compared to iteration?",
@@ -102,7 +102,7 @@
   "tags": ["Recursion vs Iteration", "Function Stack"]
 },
 {
-  "id": "79807be9f80fdb1936b2c67",
+  "id": "python_lvl_9_question_7",
   "category": "development",
   "skillType": "Programming Languages",
   "question": "What distinguishes strong typing in Python from weak typing languages like JavaScript?",
@@ -119,7 +119,7 @@
   "tags": ["Strong vs Weak Typing", "Python"]
 },
 {
-  "id": "79807be9f80fdb1936b2c68",
+  "id": "python_lvl_9_question_8",
   "category": "development",
   "skillType": "Programming Languages",
   "question": "Why does Python's garbage collector supplement reference counting?",
@@ -136,7 +136,7 @@
   "tags": ["Garbage Collection", "Memory Model"]
 },
 {
-  "id": "79807be9f80fdb1936b2c69",
+  "id": "python_lvl_9_question_9",
   "category": "development",
   "skillType": "Programming Languages",
   "question": "In Python, what happens when a variable is referenced before assignment inside a function?",
@@ -153,7 +153,7 @@
   "tags": ["Scope Rules", "Global vs Local"]
 },
 {
-  "id": "79807be9f80fdb1936b2c70",
+  "id": "python_lvl_9_question_10",
   "category": "development",
   "skillType": "Programming Languages",
   "question": "How does Python differ from compiled languages like C in its execution model?",
@@ -170,3 +170,4 @@
   "tags": ["Compilation vs Interpretation", "Execution Model"]
 }
 ]
+
