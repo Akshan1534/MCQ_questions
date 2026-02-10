@@ -1,0 +1,172 @@
+[
+  {
+    "id": "69807be9f80fdb1936b2c51",
+    "category": "development",
+    "skillType": "Programming Languages",
+    "question": "In Python, how does dynamic typing differ from static typing in languages like Java?",
+    "options": [
+      { "id": "opt1", "text": "Variables must declare their type before assignment", "isCorrect": false },
+      { "id": "opt2", "text": "Type checking happens at runtime rather than compile time", "isCorrect": true },
+      { "id": "opt3", "text": "Variables cannot change types once assigned", "isCorrect": false },
+      { "id": "opt4", "text": "Memory is allocated only on the stack", "isCorrect": false }
+    ],
+    "correctAnswer": "opt2",
+    "explanation": "Python is dynamically typed, meaning type checking occurs at runtime and variables can reference objects of different types during execution.",
+    "difficulty": "Principal",
+    "points": 5,
+    "tags": ["Static vs Dynamic Typing", "Python"]
+  },
+  {
+    "id": "69807be9f80fdb1936b2c52",
+    "category": "development",
+    "skillType": "Programming Languages",
+    "question": "What happens in Python when a local variable has the same name as a global variable?",
+    "options": [
+      { "id": "opt1", "text": "The global variable is overwritten permanently", "isCorrect": false },
+      { "id": "opt2", "text": "Python raises a compile-time error", "isCorrect": false },
+      { "id": "opt3", "text": "The local variable shadows the global within its scope", "isCorrect": true },
+      { "id": "opt4", "text": "Both variables merge into one reference", "isCorrect": false }
+    ],
+    "correctAnswer": "opt3",
+    "explanation": "In Python, local variables shadow global variables within the function scope unless declared using the 'global' keyword.",
+    "difficulty": "Principal",
+    "points": 5,
+    "tags": ["Variables & Scope", "Shadowing"]
+  },
+  {
+    "id": "69807be9f80fdb1936b2c53",
+    "category": "development",
+    "skillType": "Programming Languages",
+    "question": "How does Python handle memory management compared to C?",
+    "options": [
+      { "id": "opt1", "text": "Python requires manual memory allocation", "isCorrect": false },
+      { "id": "opt2", "text": "Python uses automatic garbage collection", "isCorrect": true },
+      { "id": "opt3", "text": "Python stores all objects on the stack", "isCorrect": false },
+      { "id": "opt4", "text": "Python prevents heap allocation", "isCorrect": false }
+    ],
+    "correctAnswer": "opt2",
+    "explanation": "Python manages memory automatically using reference counting and garbage collection, unlike C which requires manual memory management.",
+    "difficulty": "Principal",
+    "points": 5,
+    "tags": ["Memory Model", "Garbage Collection"]
+  },
+  {
+    "id": "69807be9f80fdb1936b2c54",
+    "category": "development",
+    "skillType": "Programming Languages",
+    "question": "Which statement about short-circuit evaluation in Python is correct?",
+    "options": [
+      { "id": "opt1", "text": "Both operands are always evaluated", "isCorrect": false },
+      { "id": "opt2", "text": "Evaluation stops once the result is determined", "isCorrect": true },
+      { "id": "opt3", "text": "It only applies to arithmetic operators", "isCorrect": false },
+      { "id": "opt4", "text": "It is disabled in loops", "isCorrect": false }
+    ],
+    "correctAnswer": "opt2",
+    "explanation": "Python uses short-circuit evaluation in logical expressions like 'and' and 'or', stopping evaluation once the outcome is known.",
+    "difficulty": "Principal",
+    "points": 5,
+    "tags": ["Control Flow", "Short-circuit Evaluation"]
+  },
+  {
+    "id": "69807be9f80fdb1936b2c55",
+    "category": "development",
+    "skillType": "Programming Languages",
+    "question": "What is the primary difference between call by value and call by reference in Python?",
+    "options": [
+      { "id": "opt1", "text": "Python strictly uses call by reference", "isCorrect": false },
+      { "id": "opt2", "text": "Python uses object references passed by value", "isCorrect": true },
+      { "id": "opt3", "text": "Python copies memory addresses directly", "isCorrect": false },
+      { "id": "opt4", "text": "Python uses manual pointer manipulation", "isCorrect": false }
+    ],
+    "correctAnswer": "opt2",
+    "explanation": "Python uses a model often described as 'pass-by-object-reference' where references to objects are passed by value.",
+    "difficulty": "Principal",
+    "points": 5,
+    "tags": ["Functions & Execution", "Call Semantics"]
+  },
+  {
+    "id": "69807be9f80fdb1936b2c56",
+    "category": "development",
+    "skillType": "Programming Languages",
+    "question": "What is the behavior of recursion in Python when the maximum recursion depth is exceeded?",
+    "options": [
+      { "id": "opt1", "text": "The program silently switches to iteration", "isCorrect": false },
+      { "id": "opt2", "text": "A RecursionError is raised at runtime", "isCorrect": true },
+      { "id": "opt3", "text": "The stack is automatically expanded without limit", "isCorrect": false },
+      { "id": "opt4", "text": "The function continues executing on the heap", "isCorrect": false }
+    ],
+    "correctAnswer": "opt2",
+    "explanation": "Python has a recursion depth limit to prevent stack overflow. When exceeded, it raises a RecursionError at runtime.",
+    "difficulty": "Principal",
+    "points": 5,
+    "tags": ["Recursion vs Iteration", "Function Stack Behavior"]
+  },
+  {
+    "id": "69807be9f80fdb1936b2c57",
+    "category": "development",
+    "skillType": "Programming Languages",
+    "question": "Which statement correctly describes Python's exception handling model?",
+    "options": [
+      { "id": "opt1", "text": "Errors must be checked manually after each statement", "isCorrect": false },
+      { "id": "opt2", "text": "Exceptions propagate up the call stack until handled", "isCorrect": true },
+      { "id": "opt3", "text": "Python does not differentiate compile-time and runtime errors", "isCorrect": false },
+      { "id": "opt4", "text": "Exception handling is only available in class methods", "isCorrect": false }
+    ],
+    "correctAnswer": "opt2",
+    "explanation": "When an exception occurs, Python propagates it up the call stack until it is caught by a matching except block or terminates the program.",
+    "difficulty": "Principal",
+    "points": 5,
+    "tags": ["Error Handling", "Exception Model"]
+  },
+  {
+    "id": "69807be9f80fdb1936b2c58",
+    "category": "development",
+    "skillType": "Programming Languages",
+    "question": "How does Python's memory model treat immutable objects like integers and strings?",
+    "options": [
+      { "id": "opt1", "text": "They are modified in place when changed", "isCorrect": false },
+      { "id": "opt2", "text": "A new object is created when their value changes", "isCorrect": true },
+      { "id": "opt3", "text": "They are always stored on the stack", "isCorrect": false },
+      { "id": "opt4", "text": "They bypass garbage collection", "isCorrect": false }
+    ],
+    "correctAnswer": "opt2",
+    "explanation": "Immutable objects cannot be changed after creation. Any modification results in the creation of a new object in memory.",
+    "difficulty": "Principal",
+    "points": 5,
+    "tags": ["Memory Model", "Reference vs Value Types"]
+  },
+  {
+    "id": "69807be9f80fdb1936b2c59",
+    "category": "development",
+    "skillType": "Programming Languages",
+    "question": "What distinguishes compile-time errors from runtime errors in Python?",
+    "options": [
+      { "id": "opt1", "text": "Compile-time errors occur during bytecode generation before execution", "isCorrect": true },
+      { "id": "opt2", "text": "Runtime errors occur before the interpreter starts", "isCorrect": false },
+      { "id": "opt3", "text": "Python treats all errors as compile-time errors", "isCorrect": false },
+      { "id": "opt4", "text": "Runtime errors cannot be handled using try-except", "isCorrect": false }
+    ],
+    "correctAnswer": "opt1",
+    "explanation": "Compile-time (syntax) errors are detected during parsing and bytecode compilation, while runtime errors occur during execution of the program.",
+    "difficulty": "Principal",
+    "points": 5,
+    "tags": ["Compile-time vs Runtime Errors", "Python Execution Model"]
+  },
+  {
+    "id": "69807be9f80fdb1936b2c60",
+    "category": "development",
+    "skillType": "Programming Languages",
+    "question": "In Python, how does block scope differ from languages like C or Java?",
+    "options": [
+      { "id": "opt1", "text": "Variables declared inside loops are block-scoped", "isCorrect": false },
+      { "id": "opt2", "text": "Python does not create a new scope for loops or conditionals", "isCorrect": true },
+      { "id": "opt3", "text": "Each if-statement creates a separate stack frame", "isCorrect": false },
+      { "id": "opt4", "text": "Loop variables are destroyed immediately after loop completion", "isCorrect": false }
+    ],
+    "correctAnswer": "opt2",
+    "explanation": "Unlike C or Java, Python does not introduce block scope for loops or conditionals; variables defined inside them remain accessible in the enclosing scope.",
+    "difficulty": "Principal",
+    "points": 5,
+    "tags": ["Variables & Scope", "Block vs Function Scope"]
+  }
+]
