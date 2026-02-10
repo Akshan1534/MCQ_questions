@@ -1,0 +1,172 @@
+[
+{
+  "id": "79807be9f80fdb1936b2c61",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "In Python, what is the underlying reason integers appear to behave like value types despite being objects?",
+  "options": [
+    { "id": "opt1", "text": "Integers are stored on the stack", "isCorrect": false },
+    { "id": "opt2", "text": "Integers are immutable objects referenced by variables", "isCorrect": true },
+    { "id": "opt3", "text": "Python converts integers to primitives at compile time", "isCorrect": false },
+    { "id": "opt4", "text": "Integers bypass the heap allocator", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "Integers in Python are immutable objects allocated on the heap. Variables store references, and reassignment binds a new object rather than modifying the existing one.",
+  "difficulty": "Expert",
+  "points": 5,
+  "tags": ["Memory Model", "Reference vs Value Types"]
+},
+{
+  "id": "79807be9f80fdb1936b2c62",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "Why can modifying a mutable argument inside a function affect the caller's object?",
+  "options": [
+    { "id": "opt1", "text": "Python uses true pass-by-reference", "isCorrect": false },
+    { "id": "opt2", "text": "Python copies object memory before passing", "isCorrect": false },
+    { "id": "opt3", "text": "References are passed by value, but both refer to the same mutable object", "isCorrect": true },
+    { "id": "opt4", "text": "The stack frame shares memory with the heap", "isCorrect": false }
+  ],
+  "correctAnswer": "opt3",
+  "explanation": "Python passes references by value. If the object is mutable, changes affect the same underlying object visible to the caller.",
+  "difficulty": "Expert",
+  "points": 5,
+  "tags": ["Call Semantics", "Mutable vs Immutable"]
+},
+{
+  "id": "79807be9f80fdb1936b2c63",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "What differentiates a SyntaxError from other runtime exceptions in Python?",
+  "options": [
+    { "id": "opt1", "text": "SyntaxError occurs during parsing before bytecode execution", "isCorrect": true },
+    { "id": "opt2", "text": "SyntaxError can only occur inside loops", "isCorrect": false },
+    { "id": "opt3", "text": "Runtime exceptions are detected before compilation", "isCorrect": false },
+    { "id": "opt4", "text": "Both are handled identically by the interpreter", "isCorrect": false }
+  ],
+  "correctAnswer": "opt1",
+  "explanation": "SyntaxError is raised during parsing/compilation before execution begins, whereas runtime exceptions occur during execution of bytecode.",
+  "difficulty": "Expert",
+  "points": 5,
+  "tags": ["Compile-time vs Runtime", "Error Handling"]
+},
+{
+  "id": "79807be9f80fdb1936b2c64",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "How does Python's lack of block scope impact loop variable behavior?",
+  "options": [
+    { "id": "opt1", "text": "Loop variables are garbage collected immediately", "isCorrect": false },
+    { "id": "opt2", "text": "Loop variables remain accessible after loop completion", "isCorrect": true },
+    { "id": "opt3", "text": "Each iteration creates a new variable binding", "isCorrect": false },
+    { "id": "opt4", "text": "Loop variables are stack-confined", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "Python does not create block-level scope for loops; the loop variable persists in the enclosing function or global scope.",
+  "difficulty": "Expert",
+  "points": 5,
+  "tags": ["Variables & Scope", "Block vs Function Scope"]
+},
+{
+  "id": "79807be9f80fdb1936b2c65",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "What is the consequence of short-circuit evaluation when using logical operators in conditional expressions?",
+  "options": [
+    { "id": "opt1", "text": "All operands are evaluated regardless of result", "isCorrect": false },
+    { "id": "opt2", "text": "Evaluation halts once the truth value is determined", "isCorrect": true },
+    { "id": "opt3", "text": "Logical operators convert all operands to booleans first", "isCorrect": false },
+    { "id": "opt4", "text": "Short-circuiting applies only in while loops", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "Python stops evaluating logical expressions once the result is known, preventing unnecessary computation or side effects.",
+  "difficulty": "Expert",
+  "points": 5,
+  "tags": ["Control Flow", "Short-circuit Evaluation"]
+},
+{
+  "id": "79807be9f80fdb1936b2c66",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "How does recursion impact Python's call stack compared to iteration?",
+  "options": [
+    { "id": "opt1", "text": "Recursion consumes additional stack frames per call", "isCorrect": true },
+    { "id": "opt2", "text": "Iteration always consumes more memory than recursion", "isCorrect": false },
+    { "id": "opt3", "text": "Python optimizes tail recursion automatically", "isCorrect": false },
+    { "id": "opt4", "text": "Recursion bypasses stack limitations", "isCorrect": false }
+  ],
+  "correctAnswer": "opt1",
+  "explanation": "Each recursive call creates a new stack frame. Python does not implement tail call optimization, making deep recursion memory-intensive.",
+  "difficulty": "Expert",
+  "points": 5,
+  "tags": ["Recursion vs Iteration", "Function Stack"]
+},
+{
+  "id": "79807be9f80fdb1936b2c67",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "What distinguishes strong typing in Python from weak typing languages like JavaScript?",
+  "options": [
+    { "id": "opt1", "text": "Python allows implicit type coercion freely", "isCorrect": false },
+    { "id": "opt2", "text": "Operations between incompatible types raise explicit errors", "isCorrect": true },
+    { "id": "opt3", "text": "Types are ignored during execution", "isCorrect": false },
+    { "id": "opt4", "text": "Python converts all values to strings automatically", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "Python is strongly typed, meaning it does not perform unsafe implicit type coercions and raises errors for incompatible operations.",
+  "difficulty": "Expert",
+  "points": 5,
+  "tags": ["Strong vs Weak Typing", "Python"]
+},
+{
+  "id": "79807be9f80fdb1936b2c68",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "Why does Python's garbage collector supplement reference counting?",
+  "options": [
+    { "id": "opt1", "text": "To manage stack variables", "isCorrect": false },
+    { "id": "opt2", "text": "To collect cyclic references not freed by reference counting", "isCorrect": true },
+    { "id": "opt3", "text": "To speed up compilation", "isCorrect": false },
+    { "id": "opt4", "text": "To prevent recursion errors", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "Reference counting alone cannot free cyclic references. Python's cyclic garbage collector detects and cleans these memory cycles.",
+  "difficulty": "Expert",
+  "points": 5,
+  "tags": ["Garbage Collection", "Memory Model"]
+},
+{
+  "id": "79807be9f80fdb1936b2c69",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "In Python, what happens when a variable is referenced before assignment inside a function?",
+  "options": [
+    { "id": "opt1", "text": "The global variable is automatically used", "isCorrect": false },
+    { "id": "opt2", "text": "An UnboundLocalError is raised", "isCorrect": true },
+    { "id": "opt3", "text": "Python treats it as None", "isCorrect": false },
+    { "id": "opt4", "text": "The variable is created dynamically", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "If a variable is assigned anywhere in a function, Python treats it as local. Referencing it before assignment raises UnboundLocalError.",
+  "difficulty": "Expert",
+  "points": 5,
+  "tags": ["Scope Rules", "Global vs Local"]
+},
+{
+  "id": "79807be9f80fdb1936b2c70",
+  "category": "development",
+  "skillType": "Programming Languages",
+  "question": "How does Python differ from compiled languages like C in its execution model?",
+  "options": [
+    { "id": "opt1", "text": "Python executes source code directly without translation", "isCorrect": false },
+    { "id": "opt2", "text": "Python compiles to bytecode executed by a virtual machine", "isCorrect": true },
+    { "id": "opt3", "text": "Python generates native machine code ahead of time", "isCorrect": false },
+    { "id": "opt4", "text": "Python does not use any compilation step", "isCorrect": false }
+  ],
+  "correctAnswer": "opt2",
+  "explanation": "Python source code is compiled to bytecode, which is executed by the Python Virtual Machine, unlike C which compiles to native machine code.",
+  "difficulty": "Expert",
+  "points": 5,
+  "tags": ["Compilation vs Interpretation", "Execution Model"]
+}
+]
